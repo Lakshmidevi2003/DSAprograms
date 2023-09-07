@@ -1,0 +1,15 @@
+arr=list(map(int,input().split()))
+n=len(arr)
+k=int(input())
+gsum=int(input())
+sum=0
+i=0
+j=0
+count=0
+while(j<n):
+    sum=sum+arr[j]
+    if(j==k-1):
+        if(sum==gsum):
+            count+=1
+    j+=1
+print(count)
